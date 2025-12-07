@@ -1,0 +1,15 @@
+# Composer
+/vendor/
+/composer.lock
+
+# CodeIgniter system folder
+/system/
+
+/writable/
+/tests/
+
+# Environment files
+.env
+
+# Public uploads
+public/uploads/
