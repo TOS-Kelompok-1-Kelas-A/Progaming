@@ -56,7 +56,12 @@ database.default.username = root
 database.default.password =
 database.default.DBDriver = MySQLi
 ```
-Note: *jika anda memiliki username dan password pada MySql maka sesuaikan*
+Note: 
+*jika anda memiliki username dan password pada MySql maka sesuaikan*,
+*jika ingin menjalankan aplikasi tanpa melihat pesan ERROR yang di kirimkan codeigniter maka ubah CI_ENVIRONMENT = development menjadi:*
+```
+# CI_ENVIRONMENT = production
+```
 
 ### 5️⃣ Jalankan project pada server local 
 ```bash
