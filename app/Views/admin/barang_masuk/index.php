@@ -13,7 +13,6 @@
 <div class="pc-container">
     <div class="pc-content">
 
-        <!-- ALERT SUCCESS -->
         <?php if (session()->getFlashdata('success')): ?>
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <?= session()->getFlashdata('success') ?>
@@ -78,9 +77,7 @@
     </div>
 </div>
 
-<!-- =============================== -->
 <!-- MODAL HAPUS -->
-<!-- =============================== -->
 <div class="modal fade" id="modalDelete" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">

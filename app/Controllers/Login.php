@@ -39,8 +39,6 @@ public function doLogin()
     ];
 
     session()->set($sessionData);
-
-    // REDIRECT SESUAI ROLE
     if ($user['role'] == 'admin') {
         return redirect()->to('/dashboard/admin');
     }

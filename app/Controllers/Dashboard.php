@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\ModelBarang;
 use App\Models\ModelBarangMasuk;
-use App\Models\ModelBarangKeluar;  // kalau ada
+use App\Models\ModelBarangKeluar;  
 use App\Models\UserModel;
 
 class Dashboard extends BaseController

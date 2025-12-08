@@ -27,7 +27,6 @@
 
                     <div class="card-body">
 
-                        <!-- ALERT ERROR -->
                         <?php if (session()->getFlashdata('error')): ?>
                             <div class="alert alert-danger">
                                 <?= session()->getFlashdata('error') ?>
@@ -39,7 +38,6 @@
 
                             <div class="row">
 
-                                <!-- KODE BARANG -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Kode Barang</label>
                                     <input type="text"
@@ -49,7 +47,6 @@
                                            required>
                                 </div>
 
-                                <!-- NAMA BARANG -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Nama Barang</label>
                                     <input type="text"
@@ -59,7 +56,6 @@
                                            required>
                                 </div>
 
-                                <!-- STOK -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Stok</label>
                                     <input type="number"
@@ -69,7 +65,6 @@
                                            required>
                                 </div>
 
-                                <!-- SATUAN -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Satuan</label>
                                     <input type="text"
@@ -81,7 +76,6 @@
 
                             </div>
 
-                            <!-- BUTTON SUBMIT -->
                             <div class="text-end mt-3">
                                 <button type="submit" class="btn btn-primary">
                                     <i class="ti ti-device-floppy"></i> Update Barang

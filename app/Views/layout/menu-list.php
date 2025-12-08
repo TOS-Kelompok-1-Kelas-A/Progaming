@@ -10,7 +10,6 @@
         </a>
     </li>
 
-    <!-- USER -->
     <li class="pc-item pc-caption">
         <label>Manajemen User</label>
     </li>
@@ -22,7 +21,6 @@
         </a>
     </li>
 
-    <!-- BARANG -->
     <li class="pc-item pc-caption">
         <label>Inventaris</label>
     </li>
@@ -48,7 +46,6 @@
         </a>
     </li>
 
-    <!-- LAPORAN -->
     <li class="pc-item pc-caption">
         <label>Laporan</label>
     </li>
@@ -69,9 +66,6 @@
 
 <?php endif; ?>
 
-
-
-  <!-- MENU UNTUK STAFF -->
   <?php if ($role == 'staff'): ?>
 
       <li class="pc-item">
@@ -81,7 +75,6 @@
           </a>
       </li>
 
-      <!-- Transaksi Barang -->
       <li class="pc-item pc-caption">
           <label>Transaksi</label>
       </li>

@@ -37,7 +37,7 @@ class BarangKeluarController extends BaseController
     public function store()
     {
         try {
-            $idUser = session()->get('id_user'); // user login
+            $idUser = session()->get('id_user'); 
 
             $this->barangKeluar->insert([
                 'id_barang' => $this->request->getPost('id_barang'),
@@ -45,11 +45,9 @@ class BarangKeluarController extends BaseController
                 'jumlah'    => $this->request->getPost('jumlah'),
                 'tanggal'   => date('Y-m-d H:i:s'),
             ]);
-
             session()->setFlashdata('success', 'Barang keluar berhasil dicatat');
         } 
         catch (\Exception $e) {
-            // Jika stok tidak cukup
             session()->setFlashdata('error', $e->getMessage());
         }
 

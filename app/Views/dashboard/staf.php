@@ -15,7 +15,6 @@
 
         <div class="row">
 
-            <!-- TOTAL BARANG -->
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
@@ -25,7 +24,6 @@
                 </div>
             </div>
 
-            <!-- MASUK HARI INI -->
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
@@ -35,7 +33,6 @@
                 </div>
             </div>
 
-            <!-- KELUAR HARI INI -->
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
@@ -47,7 +44,6 @@
 
         </div>
 
-        <!-- BARANG MASUK TERBARU -->
         <div class="card mt-4">
             <div class="card-header">
                 <h5>Barang Masuk Terbaru</h5>
@@ -70,7 +66,6 @@
             </div>
         </div>
 
-        <!-- BARANG KELUAR TERBARU -->
         <div class="card mt-4">
             <div class="card-header">
                 <h5>Barang Keluar Terbaru</h5>

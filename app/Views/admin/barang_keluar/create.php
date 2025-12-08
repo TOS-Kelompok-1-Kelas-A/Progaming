@@ -26,7 +26,6 @@
 
                     <div class="card-body">
 
-                        <!-- ALERT ERROR -->
                         <?php if (session()->getFlashdata('error')): ?>
                             <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
                         <?php endif ?>
@@ -35,7 +34,6 @@
 
                             <div class="row">
 
-                                <!-- PILIH BARANG -->
                                 <div class="col-md-12 mb-3">
                                     <label class="form-label">Pilih Barang</label>
                                     <select name="id_barang" class="form-select" required>
@@ -51,7 +49,6 @@
                                     </select>
                                 </div>
 
-                                <!-- JUMLAH -->
                                 <div class="col-md-12 mb-3">
                                     <label class="form-label">Jumlah</label>
                                     <input type="number" 

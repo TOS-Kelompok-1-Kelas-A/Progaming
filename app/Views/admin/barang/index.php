@@ -13,7 +13,6 @@
 <div class="pc-container">
     <div class="pc-content">
 
-        <!-- ALERT SUCCESS -->
         <?php if (session()->getFlashdata('success')): ?>
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <?= session()->getFlashdata('success') ?>

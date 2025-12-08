@@ -23,7 +23,6 @@
 
             <div class="card-body">
 
-                <!-- ALERT SUCCESS -->
                 <?php if (session()->getFlashdata('success')): ?>
                     <div class="alert alert-success alert-dismissible fade show">
                         <?= session()->getFlashdata('success') ?>
@@ -31,7 +30,6 @@
                     </div>
                 <?php endif ?>
 
-                <!-- ALERT ERROR -->
                 <?php if (session()->getFlashdata('error')): ?>
                     <div class="alert alert-danger alert-dismissible fade show">
                         <?= session()->getFlashdata('error') ?>
@@ -87,9 +85,7 @@
     </div>
 </div>
 
-<!-- =================================================== -->
-<!-- MODAL KONFIRMASI HAPUS -->
-<!-- =================================================== -->
+<!-- MODAL HAPUS DATA  -->
 <div class="modal fade" id="modalDeleteKeluar" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">

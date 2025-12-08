@@ -53,7 +53,6 @@ class User extends BaseController
             'role'     => $this->request->getPost('role'),
         ];
 
-        // Jika password diisi, update password
         $password = $this->request->getPost('password');
         if (!empty($password)) {
             $data['password'] = $password;
@@ -90,7 +89,6 @@ class User extends BaseController
             'email'    => $this->request->getPost('email'),
         ];
 
-        // Jika password diisi, update password
         $password = $this->request->getPost('password');
         if (!empty($password)) {
             $data['password'] = $password;

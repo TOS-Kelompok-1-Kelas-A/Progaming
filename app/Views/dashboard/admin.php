@@ -13,10 +13,8 @@
 <div class="pc-container">
     <div class="pc-content">
 
-        <!-- STATISTIK -->
         <div class="row">
 
-            <!-- TOTAL BARANG -->
             <div class="col-md-6 col-xl-3">
                 <div class="card">
                     <div class="card-body">
@@ -26,7 +24,6 @@
                 </div>
             </div>
 
-            <!-- BARANG MASUK (BULAN INI) -->
             <div class="col-md-6 col-xl-3">
                 <div class="card">
                     <div class="card-body">
@@ -36,7 +33,6 @@
                 </div>
             </div>
 
-            <!-- BARANG KELUAR (BULAN INI) -->
             <div class="col-md-6 col-xl-3">
                 <div class="card">
                     <div class="card-body">
@@ -46,7 +42,6 @@
                 </div>
             </div>
 
-            <!-- STOK HAMPIR HABIS -->
             <div class="col-md-6 col-xl-3">
                 <div class="card">
                     <div class="card-body">
@@ -58,8 +53,6 @@
 
         </div>
 
-
-        <!-- BARANG MASUK TERBARU -->
         <div class="card mt-4">
             <div class="card-header">
                 <h5 class="mb-0">Barang Masuk Terbaru</h5>
@@ -82,7 +75,6 @@
             </div>
         </div>
 
-        <!-- BARANG KELUAR TERBARU -->
         <div class="card mt-4">
             <div class="card-header">
                 <h5 class="mb-0">Barang Keluar Terbaru</h5>

@@ -156,7 +156,6 @@ class Laporan extends BaseController
         $spreadsheet = new \PhpOffice\PhpSpreadsheet\Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();
 
-        // HEADER
         $sheet->setCellValue('A1', 'Kode Barang');
         $sheet->setCellValue('B1', 'Nama Barang');
         $sheet->setCellValue('C1', 'Stok');

@@ -27,20 +27,17 @@
 
                     <div class="card-body">
 
-                        <!-- ALERT ERROR -->
                         <?php if (session()->getFlashdata('error')): ?>
                             <div class="alert alert-danger">
                                 <?= session()->getFlashdata('error') ?>
                             </div>
                         <?php endif ?>
 
-                        <!-- FORM START -->
                         <form action="<?= base_url('barang-masuk/store') ?>" method="post">
                             <?= csrf_field() ?>
 
                             <div class="row">
 
-                                <!-- PILIH BARANG -->
                                 <div class="col-md-12 mb-3">
                                     <label class="form-label">Pilih Barang</label>
                                     <select name="id_barang" class="form-select" required>
@@ -55,7 +52,6 @@
                                     </select>
                                 </div>
 
-                                <!-- JUMLAH MASUK -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Jumlah Masuk</label>
                                     <input type="number"
@@ -68,7 +64,6 @@
 
                             </div>
 
-                            <!-- BUTTON SUBMIT -->
                             <div class="text-end mt-3">
                                 <button type="submit" class="btn btn-primary">
                                     <i class="ti ti-device-floppy"></i> Simpan 
@@ -76,7 +71,6 @@
                             </div>
 
                         </form>
-                        <!-- FORM END -->
 
                     </div>
 
