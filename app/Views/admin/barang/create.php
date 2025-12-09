@@ -35,9 +35,7 @@
 
                         <form action="<?= base_url('barang/store') ?>" method="post">
                             <?= csrf_field() ?>
-
                             <div class="row">
-
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Kode Barang</label>
                                     <input type="text"
@@ -46,7 +44,6 @@
                                            placeholder="Masukkan kode barang"
                                            required>
                                 </div>
-
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Nama Barang</label>
                                     <input type="text"
@@ -55,7 +52,6 @@
                                            placeholder="Masukkan nama barang"
                                            required>
                                 </div>
-
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Stok </label>
                                     <input type="number"
@@ -64,7 +60,6 @@
                                            placeholder="Masukkan jumlah stok"
                                            required>
                                 </div>
-
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Satuan</label>
                                     <input type="text"
@@ -73,9 +68,7 @@
                                            placeholder="Contoh: PCS, BOX, UNIT"
                                            required>
                                 </div>
-
                             </div>
-
                             <div class="text-end mt-3">
                                 <button type="submit" class="btn btn-primary">
                                     <i class="ti ti-device-floppy"></i> Simpan Barang

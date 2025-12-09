@@ -90,9 +90,7 @@
     </div>
 
 
-    <!-- ========================================================= -->
     <!-- MODAL KONFIRMASI DELETE USER -->
-    <!-- ========================================================= -->
     <div class="modal fade" id="modalDeleteUser" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">

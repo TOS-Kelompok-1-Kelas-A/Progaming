@@ -34,9 +34,7 @@ class BarangController extends BaseController
             'stok'        => $this->request->getPost('stok'),
             'satuan'      => $this->request->getPost('satuan'),
         ]);
-
         session()->setFlashdata('success', 'Barang berhasil ditambahkan');
-
         return redirect()->to('/barang');
     }
 
@@ -55,9 +53,7 @@ class BarangController extends BaseController
             'stok'        => $this->request->getPost('stok'),
             'satuan'      => $this->request->getPost('satuan'),
         ]);
-
         session()->setFlashdata('success', 'Barang berhasil diupdate');
-
         return redirect()->to('/barang');
     }
 

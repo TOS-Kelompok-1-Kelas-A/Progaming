@@ -35,7 +35,6 @@
 
                             <div class="row">
 
-                                <!-- USERNAME -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Username</label>
                                     <input type="text" 
@@ -45,7 +44,6 @@
                                            required>
                                 </div>
 
-                                <!-- EMAIL -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Email</label>
                                     <input type="email" 
@@ -55,7 +53,6 @@
                                            required>
                                 </div>
 
-                                <!-- PASSWORD -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Password</label>
                                     <input type="password" 
@@ -65,7 +62,6 @@
                                            required>
                                 </div>
 
-                                <!-- ROLE -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Role User</label>
                                     <select name="role" class="form-select" required>
@@ -77,7 +73,6 @@
 
                             </div>
 
-                            <!-- BUTTON SUBMIT -->
                             <div class="mt-3 text-end">
                                 <button type="submit" class="btn btn-primary">
                                     <i class="ti ti-device-floppy"></i> Simpan User

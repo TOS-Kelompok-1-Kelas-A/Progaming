@@ -19,13 +19,12 @@ class UserModel extends Model
         'role'
     ];
 
-    // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
 
-    // Hash password before save
+    // sebelum hash password sebelum disimpan
     protected $beforeInsert = ['hashPassword'];
     protected $beforeUpdate = ['hashPassword'];
 

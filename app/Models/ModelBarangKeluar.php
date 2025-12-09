@@ -23,11 +23,11 @@ class ModelBarangKeluar extends Model
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
 
-    // Kurangi stok otomatis
+    // Kurang stok otomatis
     protected $beforeInsert = ['cekStokSebelumKeluar'];
     protected $afterInsert  = ['kurangiStok'];
 
-    // Validasi stok cukup sebelum insert
+    // Validasi stok cukup atau tidak sebelum barang keluar
     protected function cekStokSebelumKeluar(array $data)
     {
         $barangModel = new ModelBarang();
@@ -44,7 +44,7 @@ class ModelBarangKeluar extends Model
         return $data;
     }
 
-    // Kurangi stok setelah insert
+    // Kurangi stok setelah barang keluar
     protected function kurangiStok(array $data)
     {
         $barangModel = new ModelBarang();
@@ -52,7 +52,6 @@ class ModelBarangKeluar extends Model
         $idBarang = $data['data']['id_barang'];
         $jumlah = $data['data']['jumlah'];
 
-        // Kurangi stok
         $barangModel->kurangiStok($idBarang, $jumlah);
 
         return $data;

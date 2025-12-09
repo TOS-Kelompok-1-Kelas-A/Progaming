@@ -23,7 +23,7 @@ class ModelBarangMasuk extends Model
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
 
-    // Tambah stok otomatis
+    // bagian update stok barang setelah barang masuk
     protected $afterInsert = ['updateStok'];
 
     protected function updateStok(array $data)
@@ -33,7 +33,6 @@ class ModelBarangMasuk extends Model
         $idBarang = $data['data']['id_barang'];
         $jumlah = $data['data']['jumlah'];
 
-        // Tambahkan stok
         $barangModel->tambahStok($idBarang, $jumlah);
 
         return $data;

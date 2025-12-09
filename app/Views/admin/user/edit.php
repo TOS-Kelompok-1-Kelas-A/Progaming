@@ -33,10 +33,7 @@
 
                         <form action="<?= base_url('user/update/' . $user['id_user']) ?>" method="post">
                             <?= csrf_field() ?>
-
                             <div class="row">
-
-                                <!-- USERNAME -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Username</label>
                                     <input type="text"
@@ -45,8 +42,6 @@
                                            value="<?= esc($user['username']) ?>"
                                            required>
                                 </div>
-
-                                <!-- EMAIL -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Email</label>
                                     <input type="email"
@@ -55,8 +50,6 @@
                                            value="<?= esc($user['email']) ?>"
                                            required>
                                 </div>
-
-                                <!-- PASSWORD -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Password Baru</label>
                                     <input type="password"
@@ -65,8 +58,6 @@
                                            placeholder="Kosongkan jika tidak diubah">
                                     <small class="text-muted">Abaikan jika tidak ingin mengganti password.</small>
                                 </div>
-
-                                <!-- ROLE -->
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Role User</label>
                                     <select name="role" class="form-select" required>
@@ -78,16 +69,12 @@
                                         </option>
                                     </select>
                                 </div>
-
                             </div>
-
-                            <!-- BUTTON SUBMIT -->
                             <div class="mt-3 text-end">
                                 <button type="submit" class="btn btn-primary">
                                     <i class="ti ti-device-floppy"></i> Update User
                                 </button>
                             </div>
-
                         </form>
                     </div>
 
